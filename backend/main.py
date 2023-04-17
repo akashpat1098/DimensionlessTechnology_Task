@@ -10,7 +10,7 @@ CORS(app)
 
 # Connect to MongoDB
 DB = config('DB')
-client = MongoClient('DB')
+client = MongoClient(DB)
 db = client['object_detection_db']
 collection = db['object_detection']
 
